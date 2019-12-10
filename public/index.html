@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no'/>
+    <meta name='apple-mobile-web-app-capable' content='yes'/>
+    <meta name="format-detection" content="telephone=yes"/>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'/>
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>h5</title>
+    <script type="text/javascript"> //g.alicdn.com/kg/m-base/2.0.3/index.js'
+      ;function isMobileBrowserRedirect () {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == 'ipad';
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == 'iphone os';
+        var bIsMidp = sUserAgent.match(/midp/i) == 'midp';
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == 'rv:1.2.3.4';
+        var bIsUc = sUserAgent.match(/ucweb/i) == 'ucweb';
+        var bIsAndroid = sUserAgent.match(/android/i) == 'android';
+        var bIsCE = sUserAgent.match(/windows ce/i) == 'windows ce';
+        var bIsWM = sUserAgent.match(/windows mobile/i) == 'windows mobile';
+        var inWechat = sUserAgent.match(/MicroMessenger/i) == 'micromessenger';
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM || inWechat) {
+          return true;
+        } else {
+          return false;
+        }
+      };
+      if (isMobileBrowserRedirect()) {
+        !function(e){function t(){var t=n.clientWidth,r="}";!navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)&&t>1024&&(t=640,r=";max-width:"+t+"px;margin-right:auto!important;margin-left:auto!important;}"),e.rem=t/10,/ZTE U930_TD/.test(navigator.userAgent)&&(e.rem=1.13*e.rem),/Android\s+4\.4\.4;\s+M351\s/.test(navigator.userAgent)&&(e.rem=e.rem/1.05),/Android\s+5\.0\.1;\s+MX4\s/.test(navigator.userAgent)&&(e.rem=1.06382*e.rem),i.innerHTML="html{font-size:"+e.rem+"px!important;}body{font-size:"+12*(t/320)+"px"+r}var n=document.documentElement,i=document.createElement("style");n.firstElementChild.appendChild(i),e.addEventListener("resize",function(){t()},!1),e.addEventListener("pageshow",function(e){e.persisted&&t()},!1),t()}(window);
+      };
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but h5 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
